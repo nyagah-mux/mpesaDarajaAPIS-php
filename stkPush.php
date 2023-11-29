@@ -15,7 +15,7 @@ curl_setopt($ch, CURLOPT_POST, 1);
 
 //from the test credentials
 $businessShortCode = 174379;
-$passkey = "bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919";
+$passkey = (//put your app's passkey);
 
 //generate real-time time
 $timeStamp = date("YmdHis");
@@ -27,10 +27,10 @@ $curlPostLoad = [
     "Timestamp" => $timeStamp,
     "TransactionType" => "CustomerPayBillOnline",
     "Amount" => 1,
-    "PartyA" => 254740467735,
+    "PartyA" => (//put your number starting 254...,),
     "PartyB" => 174379,
-    "PhoneNumber" => 254740467735,
-    "CallBackURL" => "http://nyagahtest.000webhostapp.com/daraja/daraja.php",
+    "PhoneNumber" => (//put your number starting 254...,),
+    "CallBackURL" => "put your secure callBack.php's url",
     "AccountReference" => "projectAwesome",
     "TransactionDesc" => "software priced" 
 ];
